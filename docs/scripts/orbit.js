@@ -926,6 +926,8 @@ let startTouchY = 0;
 let isTouching = false;
 
 window.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+
     if (!introFinished) return;
 
     const touch = event.touches[0];
@@ -938,7 +940,7 @@ window.addEventListener("touchstart", (event) => {
 
     mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
-}, { passive: true });
+}, { passive: false });
 
 window.addEventListener("touchmove", (event) => {
     event.preventDefault();
