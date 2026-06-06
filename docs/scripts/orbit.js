@@ -855,7 +855,7 @@ projects.forEach((project, index) => {
 });
 
 function createCard(project, position, texture, aspect) {
-    const baseHeight = isMobile ? 0.6 : 0.75;
+    const baseHeight = isMobile ? 0.65 : 0.75;
     const width = baseHeight * aspect;
 
     const geometry = new THREE.PlaneGeometry(width, baseHeight);
@@ -952,8 +952,8 @@ window.addEventListener("touchmove", (event) => {
     const deltaX = touch.clientX - lastTouchX;
     const deltaY = touch.clientY - lastTouchY;
 
-    targetYaw += deltaX * 0.0035;
-    targetPitch += deltaY * 0.0022;
+    targetYaw += deltaX * 0.005;
+    targetPitch += deltaY * 0.0032;
 
     targetPitch = Math.max(
         -Math.PI / 3,
