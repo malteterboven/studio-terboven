@@ -845,7 +845,7 @@ projects.forEach((project, index) => {
 });
 
 function createCard(project, position, texture, aspect) {
-    const baseHeight = isMobile ? 0.5 : 0.65;
+    const baseHeight = isMobile ? 0.55 : 0.75;
     const width = baseHeight * aspect;
 
     const geometry = new THREE.PlaneGeometry(width, baseHeight);
