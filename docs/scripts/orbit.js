@@ -8,6 +8,16 @@ const numberEl = document.querySelector(".orbit-number");
 const titleEl = document.querySelector(".orbit-title");
 const isMobile = window.innerWidth < 768;
 
+if (isMobile) {
+    document.body.classList.add("is-mobile-orbit");
+
+    if (numberEl) numberEl.style.display = "none";
+    if (titleEl) titleEl.style.display = "none";
+
+    const orbitInfo = document.querySelector(".orbit-info");
+    if (orbitInfo) orbitInfo.style.display = "none";
+}
+
 const projects = [
     {
         number: "03.",
@@ -931,6 +941,8 @@ window.addEventListener("touchstart", (event) => {
 }, { passive: true });
 
 window.addEventListener("touchmove", (event) => {
+    event.preventDefault();
+
     if (!introFinished || !isTouching) return;
 
     const touch = event.touches[0];
@@ -951,7 +963,7 @@ window.addEventListener("touchmove", (event) => {
 
     mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
-}, { passive: true });
+}, { passive: false });
 
 window.addEventListener("touchend", (event) => {
     isTouching = false;
