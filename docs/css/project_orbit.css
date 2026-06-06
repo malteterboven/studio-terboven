@@ -37,3 +37,9 @@
     margin-top: 8px;
     font-size: 13px;
 }
+
+@media (max-width: 767px) {
+    .orbit-info {
+        display: none;
+    }
+}

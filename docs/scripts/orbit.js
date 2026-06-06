@@ -938,8 +938,8 @@ window.addEventListener("touchmove", (event) => {
     const deltaX = touch.clientX - lastTouchX;
     const deltaY = touch.clientY - lastTouchY;
 
-    targetYaw -= deltaX * 0.005;
-    targetPitch -= deltaY * 0.0032;
+    targetYaw += deltaX * 0.0035;
+    targetPitch += deltaY * 0.0022;
 
     targetPitch = Math.max(
         -Math.PI / 3,
