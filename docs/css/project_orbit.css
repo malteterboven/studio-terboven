@@ -42,4 +42,21 @@
     .orbit-info {
         display: none;
     }
+
+    html,
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .orbit-project {
+        height: 100svh;
+        overflow: hidden;
+    }
+
+    #orbit-container {
+        position: fixed;
+        inset: 0;
+        touch-action: none;
+    }
 }
