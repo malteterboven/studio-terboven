@@ -892,7 +892,7 @@ let targetYaw = 0;
 let targetPitch = 0;
 
 window.addEventListener("mousemove", (event) => {
-    if (!introFinished || isMobile) return;
+    if (!introFinished) return;
 
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
