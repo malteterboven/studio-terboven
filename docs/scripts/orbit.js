@@ -11,286 +11,286 @@ const isMobile = window.innerWidth < 768;
 const projects = [
     {
         number: "03.",
-        title: "Building Bridges",
+        title: "building bridges",
         image: "images/buildingBridges/1_visualisations/the-cabine.jpg",
         link: "projekte/buildingBridges.html"
     },
     {
         number: "06.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/modelPhotos/Axo_View.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "07.",
-        title: "Library (Extension)",
+        title: "library (extension)",
         image: "images/Library/1_visualisations/Physical-Render.jpg",
         link: "projekte/Library.html"
     },
     {
         number: "01.",
-        title: "School in Frankfurt",
+        title: "school in frankfurt",
         image: "images/site-plan_square.jpg",
         link: "projekte/school.html"
     },
     {
         number: "04.",
-        title: "Monastery Calmont",
+        title: "monastery calmont",
         image: "images/calmont/1_visualisations/calmont-exterior.jpg",
         link: "projekte/calmont.html"
     },
     {
         number: "02.",
-        title: "Coral Scraper",
+        title: "coral scraper",
         image: "images/coralScraper/1_visualisations/coral-scraper.jpg",
         link: "projekte/coralScraper.html"
     },
     {
         number: "08.",
-        title: "Studio",
+        title: "studio",
         image: "images/Studio/modelPhotos/MP_1.jpg",
         link: "projekte/Studio.html"
     },
     {
         number: "05.",
-        title: "Ugly Chair",
+        title: "ugly chair",
         image: "images/uglyChair/1_visualisations/uglyChair.jpg",
         link: "projekte/uglyChair.html"
     },
     
     {
         number: "09.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/1_visualisations/Visual-Street.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "10.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/1_visualisations/Visual-Studio.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "11.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/1_visualisations/Axo-Close.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "12.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/1_visualisations/Axo-Far.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "13.",
-        title: "Duplex",
-        image: "images/ArtistsDuplex/pictograms/Circle.gif",
+        title: "duplex",
+        image: "images/ArtistsDuplex/pictograms/circle_video.mp4",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "14.",
-        title: "Duplex",
-        image: "images/ArtistsDuplex/plans/plan_gif.gif",
+        title: "duplex",
+        image: "images/ArtistsDuplex/plans/plans_video.mp4",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "15.",
-        title: "Duplex",
+        title: "duplex",
         image: "images/ArtistsDuplex/modelPhotos/Front_View.jpg",
         link: "projekte/ArtistsDuplex.html"
     },
     {
         number: "16.",
-        title: "Building Bridges",
+        title: "building bridges",
         image: "images/buildingBridges/1_visualisations/bridge-combined.jpg",
         link: "projekte/buildingBridges.html"
     },
     {
         number: "17.",
-        title: "Building Bridges",
+        title: "building bridges",
         image: "images/buildingBridges/1_visualisations/microhome-interior.jpg",
         link: "projekte/buildingBridges.html"
     },
     {
         number: "18.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "building bridges",
+        image: "images/buildingBridges/modelPhotos/model-photo.jpg",
+        link: "projekte/buildingBridges.html"
     },
     {
         number: "19.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "building bridges",
+        image: "images/buildingBridges/plans/modular-system.jpg",
+        link: "projekte/buildingBridges.html"
     },
     {
         number: "20.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "building bridges",
+        image: "images/buildingBridges/pictograms/refugee-routes.jpg",
+        link: "projekte/buildingBridges.html"
     },
     {
         number: "21.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
+        title: "building bridges",
+        image: "images/buildingBridges/pictograms/exploded-diagram.jpg",
         link: "projekte/neuesProjekt.html"
     },
     {
         number: "22.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/1_visualisations/Render-Foyer.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "23.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/1_visualisations/Render-Hof.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "24.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/modelPhotos/model-500.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "25.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/modelPhotos/500-close.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "26.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "coral scraper",
+        image: "images/coralScraper/sections/section.jpg",
+        link: "projekte/coralScraper.html"
     },
     {
         number: "27.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/plans/Lageplan-500.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "28.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "monastery calmont",
+        image: "images/calmont/plans/Schwarzplan-5000.jpg",
+        link: "projekte/calmont.html"
     },
     {
         number: "29.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/1_visualisations/Interior_Perspective.jpg",
+        link: "projekte/Library.html"
     },
     {
         number: "30.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/modelPhotos/Photo_01.jpg",
+        link: "projekte/Library.html"
     },
     {
         number: "31.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/modelPhotos/Photo_02.jpg",
+        link: "projekte/Library.html"
     },
     {
         number: "32.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/modelPhotos/Photo_03.jpg",
+        link: "projekte/Library.html"
     },
     {
         number: "33.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/pictograms/Extension_02_video.mp4",
+        link: "projekte/Library.html"
     },
     {
         number: "34.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "library (extension)",
+        image: "images/Library/pictograms/List.jpg",
+        link: "projekte/Library.html"
     },
     {
         number: "35.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "news",
+        image: "images/mt_News/Competition-Panel.jpg",
+        link: "news.html"
     },
     {
         number: "36.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "school in frankfurt",
+        image: "images/school/1_visualisations/interior-cluster.jpg",
+        link: "projekte/school.html"
     },
     {
         number: "37.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "school in frankfurt",
+        image: "images/school/1_visualisations/interior-ground-floor.jpg",
+        link: "projekte/school.html"
     },
     {
         number: "38.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "school in frankfurt",
+        image: "images/school/1_visualisations/school-exterior.jpg",
+        link: "projekte/school.html"
     },
     {
         number: "39.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "school in frankfurt",
+        image: "images/school/pictograms/explosion.jpg",
+        link: "projekte/school.html"
     },
     {
         number: "40.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "school in frankfurt",
+        image: "images/school/plans/context.jpg",
+        link: "projekte/school.html"
     },
     {
         number: "41.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/1_visualisations/Exterior-Perspective",
+        link: "projekte/Studio.html"
     },
     {
         number: "42.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/modelPhotos/MP_2.jpg",
+        link: "projekte/Studio.html"
     },
     {
         number: "43.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/modelPhotos/MP_3.jpg",
+        link: "projekte/Studio.html"
     },
     {
         number: "44.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/modelPhotos/MP_4.jpg",
+        link: "projekte/Studio.html"
     },
     {
         number: "45.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/pictograms/explosion.jpg",
+        link: "projekte/Studio.html"
     },
     {
         number: "46.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "studio",
+        image: "images/Studio/plans/Configurations_video.mp4",
+        link: "projekte/Studio.html"
     },
     {
         number: "47.",
-        title: "Neues Projekt",
-        image: "images/test.jpg",
-        link: "projekte/neuesProjekt.html"
+        title: "coral scraper",
+        image: "images/coralScraper/pictograms/modules_video.mp4",
+        link: "projekte/coralScraper.html"
     },
     {
         number: "48.",
@@ -809,44 +809,74 @@ projects.forEach((project, index) => {
 
     if (!position) return;
 
-    loader.load(project.image, (texture) => {
-        texture.colorSpace = THREE.SRGBColorSpace;
+    const isVideo =
+        project.image.endsWith(".mp4") ||
+        project.image.endsWith(".webm");
 
-        const aspect = texture.image.width / texture.image.height;
+    if (isVideo) {
+        const video = document.createElement("video");
 
-        const baseHeight = isMobile ? 0.5 : 0.65;
-        const width = baseHeight * aspect;
+        video.src = project.image;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.autoplay = true;
+        video.crossOrigin = "anonymous";
 
-        const geometry = new THREE.PlaneGeometry(width, baseHeight);
+        video.addEventListener("loadedmetadata", () => {
+            video.play();
 
-        const material = new THREE.MeshBasicMaterial({
-            map: texture,
-            transparent: true,
-            side: THREE.DoubleSide
+            const texture = new THREE.VideoTexture(video);
+            texture.colorSpace = THREE.SRGBColorSpace;
+
+            const aspect = video.videoWidth / video.videoHeight;
+
+            createCard(project, position, texture, aspect);
         });
+    } else {
+        loader.load(project.image, (texture) => {
+            texture.colorSpace = THREE.SRGBColorSpace;
 
-        const card = new THREE.Mesh(geometry, material);
+            const aspect = texture.image.width / texture.image.height;
 
-        const targetPosition = {
-            x: position.x,
-            y: position.y,
-            z: position.z
-        };
-
-        card.userData = {
-            project: project,
-            position: position,
-            baseZ: (1 - Math.abs(position.y / sphereRadius)) * Math.PI * 0.5
-        };
-
-        world.add(card);
-        cards.push(card);
-
-        card.position.copy(targetPosition);
-        card.scale.set(1, 1, 1);
-        card.material.opacity = 1;
-    });
+            createCard(project, position, texture, aspect);
+        });
+    }
 });
+
+function createCard(project, position, texture, aspect) {
+    const baseHeight = isMobile ? 0.5 : 0.65;
+    const width = baseHeight * aspect;
+
+    const geometry = new THREE.PlaneGeometry(width, baseHeight);
+
+    const material = new THREE.MeshBasicMaterial({
+        map: texture,
+        transparent: true,
+        side: THREE.DoubleSide
+    });
+
+    const card = new THREE.Mesh(geometry, material);
+
+    const targetPosition = {
+        x: position.x,
+        y: position.y,
+        z: position.z
+    };
+
+    card.userData = {
+        project: project,
+        position: position,
+        baseZ: (1 - Math.abs(position.y / sphereRadius)) * Math.PI * 0.5
+    };
+
+    world.add(card);
+    cards.push(card);
+
+    card.position.copy(targetPosition);
+    card.scale.set(1, 1, 1);
+    card.material.opacity = 1;
+}
 
 function updateInfo(project) {
     numberEl.textContent = project.number;
