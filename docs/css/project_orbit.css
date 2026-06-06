@@ -1,0 +1,39 @@
+.orbit-project {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+#orbit-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.orbit-info {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.orbit-number {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.orbit-title {
+    margin: 0;
+    font-size: clamp(28px, 5vw, 72px);
+    font-family: "SimplonLight", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.orbit-subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+}

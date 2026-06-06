@@ -269,20 +269,41 @@ nav {
     color: black; /* Verhindert Farbänderung beim Hover */
 }
 
+
+
+
+#orbit a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#orbit a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
 /* Standardmäßig das X ausblenden, aber die Klammern sichtbar lassen */
 .cross {
     visibility: hidden;
 }
 
 /* Nur auf der aktiven Seite oder beim Hover das X anzeigen */
-#grid.active .cross, 
+#grid.active .cross,
 #grid a:hover .cross,
-#scroll.active .cross, 
-#scroll a:hover .cross {
+
+#scroll.active .cross,
+#scroll a:hover .cross,
+
+#orbit.active .cross,
+#orbit a:hover .cross {
     visibility: visible;
 }
-
-
 
 
 
