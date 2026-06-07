@@ -2,6 +2,8 @@ import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.m
 import { gsap } from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js";
 
 let introFinished = false;
+let loadedCards = 0;
+let introStarted = false;
 
 const container = document.querySelector("#orbit-container");
 const numberEl = document.querySelector(".orbit-number");
@@ -263,7 +265,7 @@ const projects = [
     {
         number: "41.",
         title: "studio",
-        image: "images/Studio/1_visualisations/Exterior-Perspective",
+        image: "images/Studio/1_visualisations/Exterior-Perspective.jpg",
         link: "projekte/Studio.html"
     },
     {
@@ -744,28 +746,37 @@ scene.add(world);
 
 world.rotation.y = -0.55;
 
-gsap.fromTo(
-    world.rotation,
-    { y: -1.2 },
-    {
-        y: Math.PI * 1,
-        duration: 3,
-        ease: "expo.out"
-    }
-);
-
 camera.position.set(0, 0, 14);
 
-gsap.to(camera.position, {
-    z: 0,
-    duration: 3,
-    ease: "power3.inOut"
-});
+function startIntro() {
+    if (introStarted) return;
 
-gsap.delayedCall(3, () => {
-    introFinished = true;
-});
+    introStarted = true;
 
+    gsap.fromTo(
+        world.rotation,
+        { y: -1.2 },
+        {
+            y: Math.PI * 1,
+            duration: 3,
+            ease: "expo.out"
+        }
+    );
+
+    gsap.to(camera.position, {
+        z: 0,
+        duration: 3,
+        ease: "power3.inOut"
+    });
+
+    gsap.delayedCall(3, () => {
+        introFinished = true;
+    });
+}
+
+setTimeout(() => {
+    startIntro();
+}, 2500);
 const loader = new THREE.TextureLoader();
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
@@ -880,14 +891,19 @@ function createCard(project, position, texture, aspect) {
         baseZ: (1 - Math.abs(position.y / sphereRadius)) * Math.PI * 0.5
     };
 
-    world.add(card);
+       world.add(card);
     cards.push(card);
 
     card.position.copy(targetPosition);
     card.scale.set(1, 1, 1);
     card.material.opacity = 1;
-}
 
+    loadedCards++;
+
+    if (loadedCards >= Math.min(projects.length, 30)) {
+        startIntro();
+    }
+}
 function updateInfo(project) {
     numberEl.textContent = project.number;
     titleEl.textContent = project.title;
@@ -952,8 +968,8 @@ window.addEventListener("touchmove", (event) => {
     const deltaX = touch.clientX - lastTouchX;
     const deltaY = touch.clientY - lastTouchY;
 
-    targetYaw += deltaX * 0.005;
-    targetPitch += deltaY * 0.0032;
+    targetYaw += deltaX * 0.0065;
+    targetPitch += deltaY * 0.005;
 
     targetPitch = Math.max(
         -Math.PI / 3,
