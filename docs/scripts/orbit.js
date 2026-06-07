@@ -868,7 +868,7 @@ projects.forEach((project, index) => {
 });
 
 function createCard(project, position, texture, aspect) {
-    const baseHeight = isMobile ? 0.65 : 0.75;
+    const baseHeight = isMobile ? 0.75 : 0.8;
     const width = baseHeight * aspect;
 
     const geometry = new THREE.PlaneGeometry(width, baseHeight);
@@ -995,7 +995,7 @@ window.addEventListener("touchend", (event) => {
     const moveX = Math.abs(touch.clientX - startTouchX);
     const moveY = Math.abs(touch.clientY - startTouchY);
 
-    const tapThreshold = 10;
+    const tapThreshold = 18;
 
     const isTap =
         moveX < tapThreshold &&
