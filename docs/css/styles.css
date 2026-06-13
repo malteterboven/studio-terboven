@@ -147,24 +147,32 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 6px;
-    flex: 1;
+    gap: 12px;
+    flex: 1 1 0;
+    white-space: nowrap;
+    min-width: max-content;
 }
 
 .navbar-right-menu a {
-    display: inline-block;
-    padding: 5px 8px;
-    background: rgba(248, 248, 248, 0.75);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 0;
+    background: none;
     color: black;
     text-decoration: none;
     font-family: "SimplonLight", sans-serif;
     font-size: 13px;
     line-height: 1;
-    border-radius: 2px;
+    border-radius: 0;
+    white-space: nowrap;
 }
 
 .navbar-right-menu a::after {
-    content: " ↓";
+    content: "↓";
+    display: inline-block;
+    width: 10px;
+    text-align: center;
     visibility: hidden;
 }
 
@@ -173,8 +181,8 @@ nav {
 }
 
 .navbar-right-menu a:hover {
-    background: black;
-    color: #f8f8f8;
+    background: none;
+    color: black;
 }
 
 #grid a,
