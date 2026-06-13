@@ -385,7 +385,7 @@ footer {
 .navbar-center.view-switcher {
     position: fixed !important;
     left: 50% !important;
-    bottom: 56px !important;
+    bottom: 12px !important;
     top: auto !important;
     transform: translateX(-50%) !important;
 

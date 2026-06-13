@@ -257,7 +257,7 @@ main.scroll .project:nth-child(4n + 4) .thumbnail .thumb{
 
 #filterBar {
     position: fixed;
-    bottom: 40px;
+    bottom: 32px;
     left: 0;
     right: 0;
 
