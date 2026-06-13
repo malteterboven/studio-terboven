@@ -171,8 +171,9 @@ nav {
 }
 
 .navbar-right-menu a::after {
-    content: "\00a0↓";
-    display: inline;
+    content: "↓";
+    display: inline-block;
+    margin-left: 1px;
     visibility: hidden;
     white-space: nowrap;
 }
