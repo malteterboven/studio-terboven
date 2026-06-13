@@ -143,19 +143,6 @@ nav {
     text-align: center;
 }
 
-.view-switcher {
-    position: fixed;
-    left: 50%;
-    bottom: 16px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    z-index: 200;
-}
-
 .navbar-right-menu {
     display: flex;
     align-items: center;
@@ -383,4 +370,20 @@ footer {
   .bottom-navbar { font-size: 9px; }
 }
 
+
+
+.navbar-center.view-switcher {
+    position: fixed !important;
+    left: 50% !important;
+    bottom: 56px !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: auto !important;
+    z-index: 200 !important;
+}
 
