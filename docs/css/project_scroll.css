@@ -257,7 +257,7 @@ main.scroll .project:nth-child(4n + 4) .thumbnail .thumb{
 
 #filterBar {
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
     left: 0;
     right: 0;
 
@@ -269,7 +269,7 @@ main.scroll .project:nth-child(4n + 4) .thumbnail .thumb{
 
     padding: 10px min(5vw, 40px);     /* dynamischer Seitenabstand */
     box-sizing: border-box;
-    background: white;
+    background: transparent;
     z-index: 100;
 
     font-size: clamp(10px, 1vw, 18px); /* schrumpft stärker bei kleinen Fenstern */
@@ -296,5 +296,5 @@ main.scroll .project:nth-child(4n + 4) .thumbnail .thumb{
 }
 
 .custom-checkbox input:checked + .checkbox-mark::before {
-    content: "[X]";
+    content: "[+]";
 }

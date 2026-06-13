@@ -143,6 +143,19 @@ nav {
     text-align: center;
 }
 
+.view-switcher {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    z-index: 200;
+}
+
 .navbar-right-menu {
     display: flex;
     align-items: center;
