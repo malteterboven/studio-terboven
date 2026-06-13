@@ -74,3 +74,31 @@
     text-align: center; /* Zentriert den Text */
     text-decoration: none; /* Entfernt die Unterstreichung des Links */
 }
+
+.image-close,
+.image-close:link,
+.image-close:visited,
+.image-close:hover,
+.image-close:active {
+    position: fixed;
+    top: 6px;
+    right: 20px;
+    left: auto;
+    z-index: 2000;
+
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+
+    color: black !important;
+    text-decoration: none !important;
+    font-family: "SimplonLight", sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.image-close::after {
+    content: none !important;
+    display: none !important;
+}

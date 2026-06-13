@@ -104,7 +104,7 @@ nav {
 .navbar-left,
 .navbar-center,
 .navbar-right-menu {
-    flex: 1;
+    flex: 1 1 0;
 }
 
 .navbar-left {
@@ -140,6 +140,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    text-align: center;
 }
 
 .navbar-right-menu {
@@ -176,19 +177,41 @@ nav {
     color: #f8f8f8;
 }
 
-#grid a, #scroll a {
-    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
-    color: black; /* Setzt die Textfarbe auf Schwarz */
-    display: flex; /* Stellt sicher, dass Inhalt im Link richtig ausgerichtet ist */
+#grid a,
+#scroll a,
+#orbit a {
+    text-decoration: none;
+    color: black;
+    display: flex;
     align-items: center;
-    gap: 5px; /* Abstand zwischen "X" und dem Text */
+    gap: 5px;
 }
 
-#grid a:hover, #scroll a:hover {
-    text-decoration: none; /* Sicherstellen, dass auch beim Hover keine Unterstreichung erscheint */
-    color: black; /* Verhindert Farbänderung beim Hover */
+#grid a:hover,
+#scroll a:hover,
+#orbit a:hover {
+    text-decoration: none;
+    color: black;
 }
 
+.project-navbar .navbar-right-menu a.close-link,
+.project-navbar .navbar-right-menu a.close-link:link,
+.project-navbar .navbar-right-menu a.close-link:visited,
+.project-navbar .navbar-right-menu a.close-link:hover,
+.project-navbar .navbar-right-menu a.close-link:active {
+    background: none !important;
+    padding: 0 !important;
+    color: black !important;
+    text-decoration: none !important;
+    border: none !important;
+    font-family: "SimplonLight", sans-serif !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+.navbar-right-menu a.close-link::after {
+    content: none;
+}
 
 
 
