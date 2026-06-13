@@ -155,6 +155,7 @@ nav {
 
 .navbar-right-menu a {
     display: inline-flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 4px;
     padding: 5px 0;
@@ -166,14 +167,14 @@ nav {
     line-height: 1;
     border-radius: 0;
     white-space: nowrap;
+    min-width: max-content;
 }
 
 .navbar-right-menu a::after {
-    content: "↓";
-    display: inline-block;
-    width: 10px;
-    text-align: center;
+    content: "\00a0↓";
+    display: inline;
     visibility: hidden;
+    white-space: nowrap;
 }
 
 .navbar-right-menu a.active::after {
