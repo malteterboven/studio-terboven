@@ -78,182 +78,102 @@ header {
 
 /* Navigation */
 nav {
-    position: fixed;  /* Fixiert die Navbar am oberen Rand */
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 0;
-    z-index: 10;
+    padding: 0;
 }
 
 /* Navbar */
 .navbar {
-    display: flex; /* Flexbox für Layout */
-    justify-content: space-between; /* Verteilung der Elemente */
-    align-items: center; /* Vertikale Ausrichtung */
-    background-color: #f8f8f8;
-    color: black;
-    padding:10px 20px;
-    height: 30px; /* Setzt die Höhe der Navbar */
-    background-color: transparent; /* Unsichtbarer Hintergrund */
-    z-index: 11; /* Noch höherer Wert für die Sicherheit */
-}
-
-/* Flex-Container für die gesamte Navbar */
-.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     display: flex;
-    justify-content: space-between;  /* Hält die rechte Navbar am rechten Rand */
-    align-items: center;  /* Zentriert alle Elemente vertikal */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 30px;
+    background-color: transparent;
+    color: black;
+    box-sizing: border-box;
 }
 
 
 
 
+.navbar-left,
+.navbar-center,
+.navbar-right-menu {
+    flex: 1;
+}
 
-
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
 
 /* Linker Text */
-.navbar-left {
-    flex: 1; /* Füllt den verfügbaren Platz links */
-    text-align: left;
-    position: relative; /* Ermöglicht die Verwendung von Pseudoelementen */
-}
-
-/* Linker Text: Styling des Links */
 .navbar-left a {
-    text-decoration: none; /* Keine Unterstreichung im normalen Zustand */
-    color: black; /* Textfarbe schwarz */
-    position: relative; /* Ermöglicht die Positionierung des neuen Textes */
-    cursor: pointer; /* Zeigt interaktives Verhalten */
-}
-
-/* Erzeugt neuen Text bei Hover */
-.navbar-left a:hover::after {
-    content: "malte terboven"; /* Neuer Text */
-    position: absolute; /* Positioniert den neuen Text */
-    top: 0;
-    left: 0; /* Gleiche Position wie der ursprüngliche Text */
-    white-space: nowrap; /* Verhindert Zeilenumbruch */
-    color: black; /* Farbe des neuen Textes */
-}
-
-/* Macht den ursprünglichen Text unsichtbar */
-.navbar-left a:hover {
-    color: transparent; /* Der Text mt verschwindet */
-}
-
-
-
-
-
-/* Rechter Text bei großen Bildern */
-.navbar-right {
-    flex: 1; /* Füllt den verfügbaren Platz links */
-    text-align: right;
-    position: relative; /* Ermöglicht die Verwendung von Pseudoelementen */
-}
-
-/* Rechter Text: Styling des Links */
-.navbar-right a {
-    text-decoration: none; /* Keine Unterstreichung im normalen Zustand */
-    color: black; /* Textfarbe schwarz */
-    position: relative; /* Ermöglicht die Positionierung des neuen Textes */
-    cursor: pointer; /* Zeigt interaktives Verhalten */
-}
-
-
-
-
-
-
-
-
-
-/* Burger Menü */
-.burger {
-    flex: 1; /* Nimmt den verbleibenden Platz ein */
-    text-align: right;
+    text-decoration: none;
     color: black;
-    cursor: pointer;
     position: relative;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    margin-left: 10px; /* Abstand nach links */
+    cursor: pointer;
 }
 
-/* Das Symbol (ohne Klammern) */
-.burger::before {
-    content: "+"; /* Nur das "+" Symbol */
+.navbar-left a:hover {
+    color: transparent;
+}
+
+.navbar-left a:hover::after {
+    content: "malte terboven";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    white-space: nowrap;
+    color: black;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right-menu {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Positioniert das "+" Symbol in der Mitte */
-    font-size: 20px; /* Schriftgröße für das Symbol */
+    justify-content: flex-end;
+    gap: 6px;
+    flex: 1;
 }
 
-/* Minus-Symbol, wenn das Menü geöffnet ist */
-.toggle-checkbox:checked + .burger::before {
-    content: "-"; /* Nur das "-" Symbol */
-}
-
-/* Verstecke das Checkbox-Element */
-.toggle-checkbox {
-    display: none;
-}
-
-/* Menü */
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Standardmäßig ausgeblendet */
-    flex-direction: column;
-    background-color: rgba(248, 248, 248, 0.8); /* Weiß mit Transparenz */
-    position: absolute; /* Absolut positioniert */
-    top: 100%; /* Direkt unter dem Navbar-Bereich */
-    left: 50%; /* Zentrierung relativ zur Breite */
-    transform: translateX(-50%); /* Exakte Zentrierung */
-    width: 100%; /* Breite des Menüs */
-    text-align: center; /* Zentriert den Text im Menü */
-    z-index: 1000; /* Menü wird vor anderen Elementen angezeigt */
-}
-
-.menu li {
-    padding: 10px 20px;
-}
-
-.menu li a {
-    text-decoration: none;
+.navbar-right-menu a {
+    display: inline-block;
+    padding: 5px 8px;
+    background: rgba(248, 248, 248, 0.75);
     color: black;
-    display: block;
+    text-decoration: none;
+    font-family: "SimplonLight", sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    border-radius: 2px;
 }
 
-/* Menü anzeigen, wenn die Checkbox aktiviert ist */
-.toggle-checkbox:checked ~ .menu {
-    display: flex;
+.navbar-right-menu a::after {
+    content: " ↓";
+    visibility: hidden;
 }
 
+.navbar-right-menu a.active::after {
+    visibility: visible;
+}
 
-
-
-
-
-
-
-
-
-/* Zentrierter Text */
-.navbar-center {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-grow: 1; 
-    gap: 20px;
+.navbar-right-menu a:hover {
+    background: black;
+    color: #f8f8f8;
 }
 
 #grid a, #scroll a {

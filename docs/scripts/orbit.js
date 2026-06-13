@@ -944,6 +944,8 @@ let startTouchY = 0;
 let isTouching = false;
 
 window.addEventListener("touchstart", (event) => {
+    if (!event.target.closest("#orbit-container")) return;
+
     event.preventDefault();
 
     if (!introFinished) return;
@@ -961,9 +963,11 @@ window.addEventListener("touchstart", (event) => {
 }, { passive: false });
 
 window.addEventListener("touchmove", (event) => {
+    if (!isTouching) return;
+
     event.preventDefault();
 
-    if (!introFinished || !isTouching) return;
+    if (!introFinished) return;
 
     const touch = event.touches[0];
 

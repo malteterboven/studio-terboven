@@ -50,17 +50,19 @@
 .image-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Bild soll den gesamten Bildschirm ausfüllen */
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Verändert die Anordnung von Bild und Titel, vertikal */
+    flex-direction: column;
+    overflow: hidden;
 }
 
-/* Bild wird skaliert, ohne das Seitenverhältnis zu verlieren */
 .large-image {
-    width: 75%; /* Reduziere die Breite */
-    height: auto; /* Behalte das Seitenverhältnis */
+    max-width: 90vw;
+    max-height: 82dvh;
+    width: auto;
+    height: auto;
     object-fit: contain;
 }
 
